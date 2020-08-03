@@ -1,0 +1,65 @@
+Intel(R) Memory Latency Checker - v3.0
+Measuring idle latencies (in ns)...
+		Numa node
+Numa node	     0	     1	
+       0	  82.4	 145.8	
+       1	 145.7	  80.7	
+
+Measuring Peak Memory Bandwidths for the system
+Bandwidths are in MB/sec (1 MB/sec = 1,000,000 Bytes/sec)
+Using all the threads from each core if Hyper-threading is enabled
+Using traffic with the following read-write ratios
+ALL Reads        :	20518.9	
+3:1 Reads-Writes :	18835.4	
+2:1 Reads-Writes :	16659.9	
+1:1 Reads-Writes :	13436.7	
+Stream-triad like:	18450.0	
+
+Measuring Memory Bandwidths between nodes within system 
+Bandwidths are in MB/sec (1 MB/sec = 1,000,000 Bytes/sec)
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+		Numa node
+Numa node	     0	     1	
+       0	10203.2	10245.9	
+       1	10210.0	10248.5	
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00000	547.48	  20514.3
+ 00002	571.88	  20225.9
+ 00008	576.25	  20377.2
+ 00015	554.36	  20532.7
+ 00050	565.11	  20489.5
+ 00100	546.25	  20537.8
+ 00200	447.47	  20538.2
+ 00300	140.52	  18297.2
+ 00400	116.29	  14478.7
+ 00500	106.08	  11985.2
+ 00700	 97.98	   8973.1
+ 01000	 94.85	   6595.8
+ 01300	 94.13	   5266.4
+ 01700	 95.41	   4191.2
+ 02500	 88.08	   3151.4
+ 03500	 87.24	   2474.1
+ 05000	 86.70	   1960.6
+ 09000	 88.93	   1400.8
+ 20000	 85.71	   1054.0
+
+Measuring cache-to-cache transfer latency (in ns)...
+Local Socket L2->L2 HIT  latency	37.7
+Local Socket L2->L2 HITM latency	41.8
+Remote Socket LLC->LLC HITM latency (data address homed in writer socket)
+			Reader Numa Node
+Writer Numa Node     0	     1	
+            0	     -	 136.4	
+            1	 136.4	     -	
+Remote Socket LLC->LLC HITM latency (data address homed in reader socket)
+			Reader Numa Node
+Writer Numa Node     0	     1	
+            0	     -	  92.8	
+            1	  92.9	     -	
